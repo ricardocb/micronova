@@ -19,7 +19,7 @@ void MicroNovaSwitch::write_state(bool state) {
           this->micronova_->queue_write_request(this->memory_location_, this->memory_address_, this->memory_data_off_);
           this->micronova_->queue_write_request(this->memory_location_, this->memory_address_, this->memory_data_off_);
           this->micronova_->queue_write_request(this->memory_location_, this->memory_address_, this->memory_data_off_);
-          this->micronova_->queue_write_request(this->memory_location_, this->memory_address_, this->memory_data_off_
+          this->micronova_->queue_write_request(this->memory_location_, this->memory_address_, this->memory_data_off_);
           ESP_LOGW(TAG, "Hello World...");
             this->micronova_->queue_write_request(this->memory_location_, this->memory_address_, this->memory_data_off_);
           this->publish_state(false);
