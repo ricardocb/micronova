@@ -23,6 +23,8 @@ void MicroNova::dump_config() {
     LOG_PIN("  Enable RX Pin: ", this->enable_rx_pin_);
   }
   ESP_LOGCONFIG(TAG, "  Serial reply delay: %d", this->serial_reply_delay_);
+  ESP_LOGCONFIG(TAG, "  Hello World...");
+  
 
   for (auto &mv_sensor : this->micronova_listeners_) {
     mv_sensor->dump_config();
