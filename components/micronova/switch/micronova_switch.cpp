@@ -15,7 +15,7 @@ void MicroNovaSwitch::write_state(bool state) {
           ESP_LOGW(TAG, "Unable to turn stove on, invalid state: %d", micronova_->get_current_stove_state());
       } else {
         // don't send power-off when status is Off or Final cleaning
-        if (this->micronova_->get_current_stove_state() != 0 && micronova_->get_current_stove_state() != 6) {
+        if (this->micronova_->get_current_stove_state() != 0 /*&& micronova_->get_current_stove_state() != 6*/) {
           this->micronova_->queue_write_request(this->memory_location_, this->memory_address_, this->memory_data_off_);
           this->micronova_->queue_write_request(this->memory_location_, this->memory_address_, this->memory_data_off_);
           this->micronova_->queue_write_request(this->memory_location_, this->memory_address_, this->memory_data_off_);
