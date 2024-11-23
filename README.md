@@ -1,4 +1,5 @@
 # ESPhome component for Micronova board based pellet stoves. 
+# DEVELOPMENT AND TEST ONLY - THIS IS NOT A PRODUCTION RELEASE 
 
 The Micronova component is now part of ESPHome. This repo is still valid and is the first place where new features and bugfixes show up.
 Full ESPHome documentation: https://esphome.io/components/micronova
