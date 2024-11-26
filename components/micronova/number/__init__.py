@@ -73,7 +73,7 @@ async def to_code(config):
         numb = await number.new_number(
             thermostat_temperature_config,
             min_value=0,
-            max_value=40,
+            max_value=50,
             step=thermostat_temperature_config.get(CONF_STEP),
         )
         cg.add(numb.set_micronova_object(mv))
