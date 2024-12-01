@@ -1,3 +1,4 @@
+/*
 #include "esphome.h"
 
 #define LED_PIN 2
@@ -39,3 +40,4 @@ public:
     }
   }
 };
+*/
